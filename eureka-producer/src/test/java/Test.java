@@ -10,15 +10,13 @@ public class Test {
     public static void main(String[] args) {
         Map<Integer, Integer> map = new HashMap<>();
 
-        map.put(1, 12);
-        map.put(2, 12);
-        map.put(3, 12);
+        Integer put1 = map.put(1, 12);
+        Integer put2 = map.put(1, 12);
+        Integer put3 = map.put(1, 123);
 
-        //get map values
-        Collection<Integer> collection = map.values();
-        //foreach map values
-        collection.forEach(System.out::println);
-
+        System.out.println(put1);
+        System.out.println(put2);
+        System.out.println(put3);
 
     }
 }
